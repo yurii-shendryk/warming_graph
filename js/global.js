@@ -7,7 +7,7 @@ fetchData()
   .then(({ years, temps }) => drawChart(years, temps));
 
 function fetchData() {
-  return fetch("../data/ZonAnn.Ts+dSST.csv").then((res) => res.text());
+  return fetch("./data/ZonAnn.Ts+dSST.csv").then((res) => res.text());
 }
 
 function parseData(data) {
